@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 // module.exports: This is a CommonJS syntax used to export the configuration object, making it available for Webpack to use.
 module.exports = {
   module: {
@@ -18,4 +20,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      //Creates an instance of the HtmlWebpackPlugin with configuration options. In this case, it specifies the path to the template HTML file (./public/index.html). This plugin will generate an HTML file based on this template and inject the webpack bundles into it.
+      template: "./public/index.html",
+    }),
+  ],
 };
