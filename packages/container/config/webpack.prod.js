@@ -15,7 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`, //the "marketing" key needs to match up the first part of some import statement inside of our container project.
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //the "marketing" key needs to match up the first part of some import statement inside of our container project.
       },
       shared: packageJSON.dependencies,
     }),
