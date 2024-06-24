@@ -12,7 +12,7 @@ const devConfig = {
     port: 8080, //Specifies the port on which the development server will run.
     historyApiFallback: {
       // Configures fallback behavior for history API usage. In this case, it redirects all requests to "index.html", which is useful for client-side routing in single-page applications (SPAs).
-      index: "index.html",
+      index: "/index.html",
     },
   },
   plugins: [
