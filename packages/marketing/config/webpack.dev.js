@@ -7,6 +7,9 @@ const packageJSON = require("../package.json");
 
 const devConfig = {
   mode: "development", //Specifies that webpack should operate in development mode.
+  output: {
+    publicPath: "http://localhost:8081/",
+  },
   devServer: {
     //This object configures the webpack development server.
     port: 8081, //Specifies the port on which the development server will run.
